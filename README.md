@@ -1,18 +1,38 @@
-# esp32-dht 
-simulation d'un système intelligent de surveillance de temperature et humidité et affichage des resultats dans dashboard web et cloud
+# Simulation d'un Système intelligent de surveillance de Température et d'Humidité  
+Projet académique - Simulation complète d'une solution IoT
 
-<b> Captures d'écran : </b> 
-![Web Dashboard](web-dashboard.png)
-![Cloud Dashboard](beebotte-dashboard.png)
-<b>Fonctionnalités : </b> 
-- Dashboard web local
-- Synchronisation cloud beebotte
-- Données temps réel
-- API REST
+<b> Description  du Projet  </b> 
+
+Système IoT hybride combinant matériel réel et simulation logicielle pour valider une architecture complète avant déploiement physique 
+
+<b> Composants </b> 
+
+ - ESP32 réel 
+ - capteur DHT22 simulé ( données générées par logiciel ) 
+ - Dashboard web local fonctionnel
+ - Synchronisation avec une plateforme cloud ( Beebotte ) 
   
-<b>Technologies : </b> 
-- Microcontroleur : esp32
-- backend : C++ (Arduino)
-- frontend : HTML / CSS / JS
-- cloud : Beebotte
-- protocoles : HTTP , REST API
+<b>Technologies  </b> 
+- Microcontroleur : ESP32
+- Capteur DHT22 ( simulé )
+- Communication : WIFI HTTP 
+- Backend : C++ (Arduino)
+- Frontend : HTML / CSS / JS
+- cloud : Beebotte API
+
+  <b>  Fonctionnement </b>
+
+  1/ Géneration de données
+  
+  2/ Affichage sur le dashboard web embarqué
+  
+  3/ Envoi automatique a Beebotte  
+
+ <b> Captures d'écran </b>
+ 
+  Dashboard Local
+  ![Web Dashboard](web-dashboard.png)
+
+  Données Cloud
+  ![Cloud Dashboard](beebotte-dashboard.png)
+  
