@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESP32 Dashboard</title>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="terminal-header">
+            <div class="terminal-dot dot-blue"></div>
+            <div class="terminal-dot dot-green"></div>
+            <div class="terminal-dot dot-pink"></div>
+            <span style="margin-left: 1rem; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;">
+                mini-dashboard
+            </span>
+        </div>
+        
+        <div class="grid">
+            <div class="metric-card">
+                <div class="metric-label">Temperature</div>
+                <div class="metric-value" id="temperature">°C</div>
+                <div class="status-indicator">
+                    <div class="status-dot" id="temp-dot"></div>
+                    <span id="temp-status">Loading...</span>
+                </div>
+            </div>
+            
+            <div class="metric-card">
+                <div class="metric-label">Humidity</div>
+                <div class="metric-value" id="humidity">-- %</div>
+                <div class="status-indicator">
+                    <div class="status-dot" id="humidity-dot"></div>
+                    <span id="humidity-status">Loading...</span>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="btn" onclick="refreshData()">
+                    <span style="font-size: 1.2rem;"></span><br>
+                    REFRESH DATA 
+                </button>
+            </div>
+           <div class="last-update">
+             Last updated: <span id="last-update">--</span>
+             </div> 
+        </div>
+    </div>
+</body>
+</html>
